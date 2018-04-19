@@ -1,0 +1,20 @@
+{
+	"manifest_version":2,
+	
+	"name":"XKCDFixer",
+	"description":"Fixes the horrible 3px alignment issue on the xkcd website. That's all this does.",
+	
+	"version":"1.0",
+	
+	"page_action":{
+		"default_icon":"icon.png",
+		"default_title":"XKCDFixer",
+		"default_popup":"test.html"
+	},
+	
+	
+	"content_scripts":[{
+		"css":["style.css"],
+		"matches":["https://www.xkcd.com/*"]
+	}]
+}
